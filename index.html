@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+
+    
+
+    <form>
+        <label for="oper">Informe o Local:</label>
+        <select name="oper"id="oper">             
+           <option id="vl" value="vl" >Vias Locais </option>
+            <option value="vc" >Vias Coletoras </option>
+            <option value="va" >Vias Arterias</option>
+            <option value="vtr">Vias de Transporte Rápido</option>
+            <option value="rpd" >Rodovia de Pista Dupla</option>
+        </select> 
+<p>
+    
+            Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+            <input type="button" value="Verificar" onclick="calcular()">
+</p>
+        <div id="res">
+    </form>
+
+    </div>
+    <script src="script.js" ></script>
+       
+
+       
+    <footer>
+    <p>&copy; Dev.Zeta</p>
+    </footer>
+</body>
+</html>
